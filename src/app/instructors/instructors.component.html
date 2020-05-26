@@ -1,1 +1,6 @@
 <p>instructors works!</p>
+<li *ngFor="let instructor of totalInstructors; index as i; first as isFirst">
+  {{instructor.nombre}}
+</li>
+
+<button (click)="getInstructors(2)">SIGUIENTES 10</button>

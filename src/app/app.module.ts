@@ -6,7 +6,7 @@ import { BisiComponent } from './bisi/bisi.component';
 import { InstructorsComponent } from './instructors/instructors.component';
 import {APP_ROUTES} from './app.routes';
 import { CartComponent } from './cart/cart.component';
-
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -17,6 +17,7 @@ import { CartComponent } from './cart/cart.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     APP_ROUTES,
   ],
   providers: [],
