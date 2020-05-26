@@ -1,0 +1,28 @@
+<div class="box-container-title">
+  <div class="row">
+    <div class="col text-center">
+      <h1>Instructores Siclo+</h1>
+    </div>
+  </div>
+  <ngx-spinner></ngx-spinner>
+
+  <section class="instructors" *ngIf="loading === false">
+    <div class="instructors__container" >
+      <div class="instructors-item" *ngFor="let instructor of totalInstructors; index as i; first as isFirst">
+        <img class="instructors-item__img" src={{instructor.face_photo}} alt="">
+        <div class="instructors-item__details">
+          <p class="instructors-item__details--title">{{instructor.nombre}}</p>
+          <p class="instructors-item__details--subtitle" *ngIf="instructor.interests !== null">{{instructor.interests.music}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+        <nav aria-label="Page navigation siclo" *ngIf="loading === false">
+          <ul class="pagination justify-content-center">
+            <li class="page-item page-link" (click)="getInstructors(page)" *ngFor="let page of pages; index as i; first as isFirst">{{page}}</li>
+          </ul>
+        </nav>
+</div>
+

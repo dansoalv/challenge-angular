@@ -1,0 +1,164 @@
+<div class="box-container-info">
+  <div class="row ">
+    <div class="col text-center">
+      <p class="banner">
+        Disponibilidad limitada. Envíos Julio 2020.
+      </p>
+    </div>
+  </div>
+  <div class="container box-container-main">
+    <div class="row align-items-center">
+      <div class="col-7 text-center">
+        <img class="img-main" src={{imgMain}} alt="Galeria">
+        <div class="thumbs">
+          <img class="img-thumbs" src={{img}} alt="Galeria"  (click)="onChangeImg(img)" *ngFor="let img of imgProducts; index as i; first as isFirst">
+        </div>
+      </div>
+      <div class="col-5">
+        <div class="row">
+         <div class="col">
+           <h1>biSí</h1>
+           <p class="termsandconditions">* Disponibilidad limitada.<br/> Es posible que este precio se modifique dada la devaluación del Tipo de Cambio.</p>
+         </div>
+        </div>
+        <div class="row ">
+          <div class="col">
+            <ul>
+              <li>30 días gratis de suscripción Síclo+ al activar la biSí. <span class="letter-special">Después $999 mxn/mes.</span> </li>
+              <li>No incluye zapatos ni mancuernas.</li>
+              <li><strong>Envío gratis.</strong></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button class="btn-register" data-toggle="modal" data-target="#exampleModal">
+              Registrarme
+            </button>
+          </div>
+          <div class="col">
+            <p class="price">$42,995 mxn</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="box-container-specs">
+  <div class="container ">
+    <div class="row">
+      <div class="col ">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="specs-tab" data-toggle="tab" href="#specs" role="tab" aria-controls="specs" aria-selected="true">Especificaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="touch-tab" data-toggle="tab" href="#touch" role="tab" aria-controls="touch" aria-selected="false">Touchscreen</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="specs" role="tabpanel" aria-labelledby="specs-tab">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <table class="table table-siclo">
+                  <thead></thead>
+                  <tbody>
+                  <tr>
+                    <th class="celda-th" scope="row">Peso:</th>
+                    <td>56.8 kg</td>
+                  </tr>
+                  <tr>
+                    <th class="celda-th" scope="row">Peso con touchscreen:</th>
+                    <td>61.8 kg</td>
+                  </tr>
+                  <tr>
+                    <th class="celda-th" scope="row">Altura:</th>
+                    <td>99 cm</td>
+                  </tr>
+                  <tr>
+                    <th class="celda-th" scope="row">Altura con touchscreen:</th>
+                    <td>144 cm</td>
+                  </tr>
+                  <tr>
+                    <th  class="celda-th" scope="row">Largo:</th>
+                    <td>133 cm</td>
+                  </tr>
+                  <tr>
+                    <th class="celda-th" scope="row">Ancho:</th>
+                    <td>76.3 cm</td>
+                  </tr>
+                  <tr>
+                    <th class="celda-th" scope="row">Rango de altura de usuario:</th>
+                    <td>147 - 208 cm</td>
+                  </tr>
+                  <tr>
+                    <th class="celda-th" scope="row">Peso máximo de usuario de usuario:</th>
+                    <td>158 kg</td>
+                  </tr>
+                  <tr>
+                    <th class="celda-th" scope="row">Bluetooth:</th>
+                    <td>4.0</td>
+                  </tr>
+                  <tr>
+                    <th class="celda-th" scope="row">Voltaje:</th>
+                    <td>110-240V, 50/60HZ</td>
+                  </tr>
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="touch" role="tabpanel" aria-labelledby="touch-tab">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <table class="table table-siclo">
+                  <thead></thead>
+                  <tbody>
+                  <tr>
+                    <th class="celda-th" scope="row">Tamaño de pantalla:</th>
+                    <td>27”</td>
+                  </tr>
+                  <tr>
+                    <th class="celda-th" scope="row">Resolución:</th>
+                    <td>1920 x 1080 FHD</td>
+                  </tr>
+                  <tr>
+                    <th class="celda-th" scope="row">Rotación:</th>
+                    <td>180°</td>
+                  </tr>
+                  <tr>
+                    <th class="celda-th" scope="row">Wifi:</th>
+                    <td>802.11 a/b/g/h/ac</td>
+                  </tr>
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Completa tus datos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <app-register></app-register>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-register">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
