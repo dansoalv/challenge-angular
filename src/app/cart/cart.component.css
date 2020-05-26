@@ -72,3 +72,22 @@ ul{
   margin-top: 20px;
   margin-bottom: 30px;
 }
+
+
+.img-thumbs{
+  width: 90px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.img-main{
+  width: 500px;
+  margin-bottom: 10px;
+}
+
+.thumbs{
+  align-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

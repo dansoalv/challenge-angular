@@ -8,8 +8,11 @@
   </div>
   <div class="container box-container-main">
     <div class="row align-items-center">
-      <div class="col-7">
-        <img style="width: 100%" src="../../assets/bisi3.jpg" alt="Galeria">
+      <div class="col-7 text-center">
+        <img class="img-main" src={{imgMain}} alt="Galeria">
+        <div class="thumbs">
+          <img class="img-thumbs" src={{img}} alt="Galeria"  (click)="onChangeImg(img)" *ngFor="let img of imgProducts; index as i; first as isFirst">
+        </div>
       </div>
       <div class="col-5">
         <div class="row">
