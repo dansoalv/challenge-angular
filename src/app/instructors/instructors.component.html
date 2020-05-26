@@ -1,6 +1,29 @@
-<p>instructors works!</p>
-<li *ngFor="let instructor of totalInstructors; index as i; first as isFirst">
-  {{instructor.nombre}}
-</li>
+<div class="box-container-title">
+  <div class="row">
+    <div class="col text-center">
+      <h1>Instructores Siclo+</h1>
+    </div>
+  </div>
+  <div class="spinner-grow" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <section class="carousel">
+    <div class="carousel__container" >
+      <div class="carousel-item" *ngFor="let instructor of totalInstructors; index as i; first as isFirst">
+        <img class="carousel-item__img" src={{instructor.face_photo}} alt="">
+        <div class="carousel-item__details">
+          <p class="carousel-item__details--title">{{instructor.nombre}}</p>
+          <p class="carousel-item__details--subtitle" *ngIf="instructor.interests !== null">{{instructor.interests.music}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<button (click)="getInstructors(2)">SIGUIENTES 10</button>
+
+        <nav aria-label="Page navigation siclo" >
+          <ul class="pagination justify-content-center">
+            <li class="page-item page-link" (click)="getInstructors(page)" *ngFor="let page of pages; index as i; first as isFirst">{{page}}</li>
+          </ul>
+        </nav>
+</div>
+

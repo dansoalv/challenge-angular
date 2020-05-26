@@ -98,6 +98,7 @@
 
 body{
   margin: 0;
+  font-family: "Circular Std Book", monospace;
 }
 
 .primary-color {
@@ -107,7 +108,6 @@ body{
 .nav-link {
   color: gray;
   margin-top: 5px;
-  font-family: "Circular Std Book";
 }
 
 
