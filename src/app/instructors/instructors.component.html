@@ -6,13 +6,13 @@
   </div>
   <ngx-spinner></ngx-spinner>
 
-  <section class="carousel" *ngIf="loading === false">
-    <div class="carousel__container" >
-      <div class="carousel-item" *ngFor="let instructor of totalInstructors; index as i; first as isFirst">
-        <img class="carousel-item__img" src={{instructor.face_photo}} alt="">
-        <div class="carousel-item__details">
-          <p class="carousel-item__details--title">{{instructor.nombre}}</p>
-          <p class="carousel-item__details--subtitle" *ngIf="instructor.interests !== null">{{instructor.interests.music}}</p>
+  <section class="instructors" *ngIf="loading === false">
+    <div class="instructors__container" >
+      <div class="instructors-item" *ngFor="let instructor of totalInstructors; index as i; first as isFirst">
+        <img class="instructors-item__img" src={{instructor.face_photo}} alt="">
+        <div class="instructors-item__details">
+          <p class="instructors-item__details--title">{{instructor.nombre}}</p>
+          <p class="instructors-item__details--subtitle" *ngIf="instructor.interests !== null">{{instructor.interests.music}}</p>
         </div>
       </div>
     </div>

@@ -8,13 +8,15 @@ import {APP_ROUTES} from './app.routes';
 import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { RegisterComponent } from './cart/register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BisiComponent,
     InstructorsComponent,
-    CartComponent
+    CartComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

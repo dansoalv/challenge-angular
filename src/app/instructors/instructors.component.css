@@ -9,7 +9,7 @@
   position: relative;
 }
 
-.carousel{
+.instructors{
   width: 100%;
   overflow: scroll;
   padding: 50px;
@@ -18,13 +18,13 @@
   text-align: center;
 }
 
-.carousel__container{
+.instructors__container{
   white-space: nowrap;
   margin: 50px 0;
   padding-bottom: 10px;
 }
 
-.carousel-item{
+.instructors-item{
   background-color: white;
   width: 300px;
   height: 350px;
@@ -39,26 +39,26 @@
 }
 
 
-.carousel-item:hover ~ .carousel-item {
+.instructors-item:hover ~ .instructors-item {
   transform: translate3d(100px, 0, 0);
 }
 
-.carousel__container:hover .carousel-item{
+.instructors__container:hover .instructors-item{
   opacity: 0.3;
 }
 
-.carousel__container:hover .carousel-item:hover {
+.instructors__container:hover .instructors-item:hover {
   transform: scale(1.1);
   opacity: 1;
 }
 
-.carousel-item__img{
+.instructors-item__img{
   width: 300px;
   height: 350px;
   object-fit: cover;
 }
 
-.carousel-item__details{
+.instructors-item__details{
   background: linear-gradient(to top, rgba(0,0,0,0.9) 0%,  rgba(0,0,0,0) 100%);
   font-size: 15px;
   opacity: 0;
@@ -71,22 +71,22 @@
   bottom: 0;
 }
 
-.carousel-item:hover .carousel-item__details {
+.instructors-item:hover .instructors-item__details {
   opacity: 1;
 }
 
-.carousel-item__details img {
+.instructors-item__details img {
   margin: 5px;
   width: 20px;
 }
 
-.carousel-item__details--title{
+.instructors-item__details--title{
   margin: 5px;
   color:white;
   font-size: 25px;
 }
 
-.carousel-item__details--subtitle {
+.instructors-item__details--subtitle {
   margin: 5px;
   color:white;
   font-size: 12px;
