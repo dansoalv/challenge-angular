@@ -1,0 +1,50 @@
+.description-bisi{
+  font-size: 20px;
+  font-family: "Circular Std";
+  width: 300px;
+}
+
+.box-bisi{
+  background-color: #F0EBDC ;
+  height: 99vh;
+}
+
+.box-bisi-container{
+  padding: 100px;
+}
+
+.img-bisi{
+  height: 600px;
+}
+
+.btn-buy{
+  width: 250px;
+  border: none;
+  height: 50px;
+  font-family: "Circular Std Book";
+  cursor: pointer;
+  color:black;
+  background-color: white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-buy:hover{background-color: #efe7d0f7;}
+
+button:focus {
+  outline: none;
+}
+
+.link-btn {
+  color: black;
+  text-decoration: none;
+}
+
+
+.dateRelease {
+  margin-top: 40px;
+  color: #80808080;
+}
