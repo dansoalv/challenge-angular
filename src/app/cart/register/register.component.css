@@ -14,7 +14,11 @@
   border-top: 0;
   border-bottom: 1px solid gray;
   font-size: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   outline: none;
   height: 50px;
+}
+
+.msgError{
+  color: red !important;
 }

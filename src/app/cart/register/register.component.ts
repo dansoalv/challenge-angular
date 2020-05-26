@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import validator from 'validator';
 
 @Component({
   selector: 'app-register',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterComponent implements OnInit {
   isUser = false;
+  isEmailValid;
   constructor() { }
 
   ngOnInit(): void {
@@ -16,5 +18,8 @@ export class RegisterComponent implements OnInit {
     this.isUser = isChecked;
   }
 
+  onChangeEmail(email) {
+    this.isEmailValid = validator.isEmail(email);
+  }
 
 }
