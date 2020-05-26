@@ -34,9 +34,7 @@
 
 .btn-buy:hover{background-color: #efe7d0f7;}
 
-button:focus {
-  outline: none;
-}
+
 
 .link-btn {
   color: black;
