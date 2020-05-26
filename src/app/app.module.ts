@@ -7,6 +7,7 @@ import { InstructorsComponent } from './instructors/instructors.component';
 import {APP_ROUTES} from './app.routes';
 import { CartComponent } from './cart/cart.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
