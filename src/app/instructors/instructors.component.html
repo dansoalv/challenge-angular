@@ -4,10 +4,9 @@
       <h1>Instructores Siclo+</h1>
     </div>
   </div>
-  <div class="spinner-grow" role="status">
-    <span class="sr-only">Loading...</span>
-  </div>
-  <section class="carousel">
+  <ngx-spinner></ngx-spinner>
+
+  <section class="carousel" *ngIf="loading === false">
     <div class="carousel__container" >
       <div class="carousel-item" *ngFor="let instructor of totalInstructors; index as i; first as isFirst">
         <img class="carousel-item__img" src={{instructor.face_photo}} alt="">
@@ -20,7 +19,7 @@
   </section>
 
 
-        <nav aria-label="Page navigation siclo" >
+        <nav aria-label="Page navigation siclo" *ngIf="loading === false">
           <ul class="pagination justify-content-center">
             <li class="page-item page-link" (click)="getInstructors(page)" *ngFor="let page of pages; index as i; first as isFirst">{{page}}</li>
           </ul>
